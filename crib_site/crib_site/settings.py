@@ -46,6 +46,11 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
