@@ -1,1 +1,1 @@
-web: gunicorn crib_site.crib_site.wsgi:application --port $PORT --bind 0.0.0.0
+web: gunicorn crib_site.wsgi:application --port $PORT --bind 0.0.0.0
